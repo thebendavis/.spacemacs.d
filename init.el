@@ -302,6 +302,9 @@ you should place your code here."
   ;; enable text mode when composing an email message for mutt.
   (add-to-list 'auto-mode-alist `(,my-mutt-file-name-regex . text-mode))
 
+  (setq powerline-default-separator 'utf-8)
+  (spaceline-compile)
+
   ;; workaround for lazy loading issue
   (spacemacs/load-theme 'leuven)
   )
