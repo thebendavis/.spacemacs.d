@@ -35,13 +35,15 @@ values."
      (git :variables
           git-magit-status-fullscreen t)
      haskell
+     java
+     javascript
      lua
      markdown
      osx
      org
-     ;; (shell :variables
-     ;;        shell-default-height 30
-     ;;        shell-default-position 'bottom)
+     (shell :variables
+            shell-default-height 30
+            shell-default-position 'bottom)
      pandoc
      ruby
      semantic
