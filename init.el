@@ -34,7 +34,7 @@ values."
      emacs-lisp
      (git :variables
           git-magit-status-fullscreen t)
-     haskell
+     (haskell :variables haskell-completion-backend 'intero)
      java
      javascript
      lua
