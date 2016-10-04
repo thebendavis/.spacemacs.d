@@ -136,6 +136,15 @@ values."
             :weight bold
             :width normal
             :powerline-scale 1.1))
+
+         ((eq system-type 'darwin)
+          '("Input Mono Narrow"
+            :size 14
+            :weight normal
+            :width normal
+            ;; workaround rumored OS X bug hit when powerline not 1
+            :powerline-scale 1))
+
          (t '("Input Mono Narrow"
               :size 14
               :weight normal
