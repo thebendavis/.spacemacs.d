@@ -316,6 +316,9 @@ you should place your code here."
 
   ;; workaround for lazy loading issue
   (spacemacs/load-theme 'leuven)
+
+  ;; always scroll one line at a time
+  (setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control))))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
