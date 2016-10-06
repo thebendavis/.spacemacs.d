@@ -311,6 +311,9 @@ you should place your code here."
   ;; enable text mode when composing an email message for mutt.
   (add-to-list 'auto-mode-alist `(,my-mutt-file-name-regex . text-mode))
 
+  ;; more granular undo
+  (setq evil-want-fine-undo 't)
+
   (setq powerline-default-separator 'utf-8)
   (spaceline-compile)
 
