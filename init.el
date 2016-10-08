@@ -118,13 +118,9 @@ values."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
+                         gruvbox
                          leuven
-                         spacemacs-dark
-                         spacemacs-light
-                         solarized-light
-                         solarized-dark
                          monokai
-                         zenburn
                          )
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state t
@@ -319,7 +315,7 @@ you should place your code here."
   (spaceline-compile)
 
   ;; workaround for lazy loading issue
-  (spacemacs/load-theme 'leuven)
+  (spacemacs/load-theme 'gruvbox)
 
   ;; always scroll one line at a time
   (setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control))))
