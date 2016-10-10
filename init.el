@@ -154,24 +154,25 @@ values."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
+   ;; Check if font is available with (member "PragmataPro" (font-family-list))
    dotspacemacs-default-font
-   (cond ((member "InputMonoNarrow" (font-family-list)) ;; Windows
-          '("InputMonoNarrow"
-            :size 15
-            :weight bold
+   (cond ((eq system-type 'windows-nt)
+          '("PragmataPro"
+            :size 18
+            :weight normal
             :width normal
             :powerline-scale 1.1))
 
          ((eq system-type 'darwin)
-          '("Input Mono Narrow"
-            :size 14
+          '("PragmataPro"
+            :size 18
             :weight normal
             :width normal
             ;; workaround rumored OS X bug hit when powerline not 1
             :powerline-scale 1))
 
-         (t '("Input Mono Narrow"
-              :size 14
+         (t '("PragmataPro"
+              :size 18
               :weight normal
               :width normal
               :powerline-scale 1.1)))
