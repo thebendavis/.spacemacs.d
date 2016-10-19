@@ -41,7 +41,6 @@ values."
                       auto-completion-tab-key-behavior 'complete)
      better-defaults
      c-c++
-     company
      colors
      deft
      emacs-lisp
