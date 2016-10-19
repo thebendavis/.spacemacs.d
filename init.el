@@ -165,7 +165,7 @@ values."
 
          ((eq system-type 'darwin)
           '("PragmataPro"
-            :size 18
+            :size 14
             :weight normal
             :width normal
             ;; workaround rumored OS X bug hit when powerline not 1
