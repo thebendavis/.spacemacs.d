@@ -47,12 +47,29 @@ values."
      (git :variables
           git-magit-status-fullscreen t)
      (haskell :variables haskell-completion-backend 'intero)
+     html
      java
      javascript
      lua
      markdown
      osx
-     org
+     (org :variables
+          org-todo-keywords '((sequence "TODO" "WAITING" "|" "DONE" "CANCELED"))
+          org-global-properties '(("Effort_ALL" . "0:05 0:15 0:25 0:55"))
+          org-refile-targets '((nil :maxlevel . 9)
+                               (org-agenda-files :maxlevel . 9))
+          org-refile-use-outline-path t ;; use full outline paths for refile targets
+          org-outline-path-complete-in-steps nil
+
+          org-capture-templates
+          '(("t" "Todo" entry (file+datetree "refile.org")
+             "* TODO %?\n%U\n" :clock-in t :clock-resume t)
+            ("j" "Journal" entry (file+datetree "refile.org")
+             "* %?\n%U\n" :clock-in t :clock-resume t)
+            ("m" "Meeting" entry (file+datetree "refile.org")
+             "* Meeting: %? :meeting:\n%U" :clock-in t :clock-resume t))
+
+          org-enable-reveal-js-support t)
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)
@@ -338,10 +355,13 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
 
-  (setq deft-extensions '("md" "text" "org"))
+  (setq deft-extensions '("org" "md"))
   (setq deft-directory
         (cond ((file-directory-p "~/Dropbox/apps/deft") "~/Dropbox/apps/deft")
               (t "~/deft")))
+
+  (setq org-directory deft-directory)
+  (setq org-agenda-files `(,deft-directory))
 
   (when (file-directory-p "~/.local/bin")
     (add-to-list 'exec-path "~/.local/bin"))
