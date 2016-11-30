@@ -63,7 +63,7 @@ values."
 
           org-capture-templates
           '(("t" "Todo" entry (file+datetree "refile.org")
-             "* TODO %?\n%U\n" :clock-in t :clock-resume t)
+             "* TODO %?\n  %U\n" :clock-in t :clock-resume t)
             ("j" "Journal" entry (file+datetree "refile.org")
              "* %?\n%U\n" :clock-in t :clock-resume t)
             ("m" "Meeting" entry (file+datetree "refile.org")
