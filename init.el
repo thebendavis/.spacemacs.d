@@ -65,9 +65,9 @@ values."
           '(("t" "Todo" entry (file+datetree "refile.org")
              "* TODO %?\n  %U\n" :clock-in t :clock-resume t)
             ("j" "Journal" entry (file+datetree "refile.org")
-             "* %?\n%U\n" :clock-in t :clock-resume t)
+             "* %?\n  %U\n" :clock-in t :clock-resume t)
             ("m" "Meeting" entry (file+datetree "refile.org")
-             "* Meeting: %? :meeting:\n%U" :clock-in t :clock-resume t))
+             "* Meeting: %? :meeting:\n  %U" :clock-in t :clock-resume t))
 
           org-enable-reveal-js-support t)
      (shell :variables
