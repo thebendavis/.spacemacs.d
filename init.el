@@ -37,7 +37,7 @@ values."
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      (auto-completion :variables
-                      auto-completion-return-key-behavior 'nil
+                      auto-completion-return-key-behavior nil
                       auto-completion-tab-key-behavior 'complete)
      better-defaults
      c-c++
@@ -60,6 +60,7 @@ values."
                                (org-agenda-files :maxlevel . 9))
           org-refile-use-outline-path t ;; use full outline paths for refile targets
           org-outline-path-complete-in-steps nil
+          org-startup-truncated nil
 
           org-capture-templates
           '(("t" "Todo" entry (file+datetree "refile.org")
