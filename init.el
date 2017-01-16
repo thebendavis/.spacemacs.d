@@ -383,6 +383,10 @@ you should place your code here."
   ;; more granular undo
   (setq evil-want-fine-undo 't)
 
+  (spacemacs/toggle-mode-line-org-clock-on)
+  (when (spacemacs/system-is-mac)
+    (spacemacs/toggle-mode-line-battery-on))
+
   (setq powerline-default-separator 'utf-8)
   (spaceline-compile)
 
