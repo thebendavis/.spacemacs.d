@@ -56,7 +56,7 @@ values."
      osx
      (org :variables
           org-todo-keywords '((sequence "TODO" "WAITING" "|" "DONE" "CANCELED"))
-          org-global-properties '(("Effort_ALL" . "0:05 0:15 0:25 0:55"))
+          org-global-properties '(("Effort_ALL" . "0:05 0:15 0:30 1:00"))
           org-refile-targets '((nil :maxlevel . 9)
                                (org-agenda-files :maxlevel . 9))
           org-refile-use-outline-path t ;; use full outline paths for refile targets
