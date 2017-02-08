@@ -70,6 +70,10 @@ values."
              "* Meeting: %? :meeting:\n  %U" :clock-in t :clock-resume t))
 
           org-enable-reveal-js-support t)
+     (python :variables
+             ;; suppress warning on systems where python's readline support
+             ;; doesn't work by just disabling the feature entirely
+             python-shell-completion-native-enable nil)
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)
