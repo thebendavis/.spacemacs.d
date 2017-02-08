@@ -59,7 +59,9 @@ values."
                                (org-agenda-files :maxlevel . 9))
           org-refile-use-outline-path t ;; use full outline paths for refile targets
           org-outline-path-complete-in-steps nil
+
           org-startup-truncated nil
+          org-tags-column -76 ;; reduce from default by 1 to avoid wrapping now that we've disabled truncation
 
           org-capture-templates
           '(("t" "Todo" entry (file+datetree "refile.org")
