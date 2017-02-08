@@ -47,6 +47,8 @@ values."
      html
      java
      javascript
+     (latex :variables
+            latex-enable-auto-fill nil)
      lua
      markdown
      osx
