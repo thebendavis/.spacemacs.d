@@ -398,6 +398,11 @@ you should place your code here."
   (setq powerline-default-separator 'utf-8)
   (spaceline-compile)
 
+  ;; Setting haskell-completion-backend to intero will set up intero only if
+  ;; company is a used package. I don't want autocomplete, but want other intero
+  ;; features, so I set it up myself
+  (add-hook 'haskell-mode-hook 'spacemacs-haskell//setup-intero)
+
   ;; always scroll one line at a time
   (setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control))))
   )
