@@ -40,6 +40,7 @@ values."
      c-c++
      colors
      deft
+     docker
      emacs-lisp
      (git :variables
           git-magit-status-fullscreen t)
