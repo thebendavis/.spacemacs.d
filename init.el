@@ -401,7 +401,7 @@ you should place your code here."
 
   (spacemacs/toggle-mode-line-org-clock-on)
 
-  (setq powerline-default-separator 'utf-8)
+  (setq powerline-default-separator nil)
   (spaceline-compile)
 
   ;; Setting haskell-completion-backend to intero will set up intero only if
