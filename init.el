@@ -167,6 +167,7 @@ values."
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
                          spacemacs-dark
+                         dracula
                          gruvbox
                          sanityinc-tomorrow-eighties
                          leuven
