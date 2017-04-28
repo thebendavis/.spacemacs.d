@@ -73,16 +73,17 @@ values."
              "* Meeting: %? :meeting:\n  %U" :clock-in t :clock-resume t))
 
           org-enable-reveal-js-support t)
+     pandoc
+     python
+     ruby
+     semantic
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)
-     themes-megapack
-     pandoc
-     ruby
-     semantic
      (spell-checking :variables
                      ispell-program-name "aspell")
      syntax-checking
+     themes-megapack
      vagrant
      version-control
      yaml
