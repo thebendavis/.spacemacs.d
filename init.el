@@ -187,8 +187,8 @@ values."
             :powerline-scale 1.1))
 
          ((eq system-type 'darwin)
-          '("PragmataPro"
-            :size 14
+          '("PragmataPro Mono"
+            :size 16
             :weight normal
             :width normal
             ;; workaround rumored OS X bug hit when powerline not 1
