@@ -73,7 +73,6 @@ values."
              "* Meeting: %? :meeting:\n  %U" :clock-in t :clock-resume t))
 
           org-enable-reveal-js-support t)
-     pandoc
      python
      ruby
      semantic
