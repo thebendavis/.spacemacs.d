@@ -54,6 +54,7 @@ values."
      markdown
      osx
      (org :variables
+          org-bullets-bullet-list '("◉" "○" "■" "◆" "▲" "▶")
           org-todo-keywords '((sequence "TODO" "WAITING" "|" "DONE" "CANCELED"))
           org-global-properties '(("Effort_ALL" . "0:05 0:15 0:30 1:00"))
           org-refile-targets '((nil :maxlevel . 9)
