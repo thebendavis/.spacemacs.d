@@ -416,6 +416,9 @@ you should place your code here."
   ;; features, so I set it up myself
   (add-hook 'haskell-mode-hook 'spacemacs-haskell//setup-intero)
 
+  (spacemacs/set-leader-keys-for-major-mode 'haskell-mode
+    "H" 'hindent-reformat-buffer)
+
   ;; always scroll one line at a time
   (setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control))))
   )
